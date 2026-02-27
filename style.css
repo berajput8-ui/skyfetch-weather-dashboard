@@ -1,33 +1,68 @@
-.current-weather {
-    margin-bottom: 20px;
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.search-section {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 8px;
+  width: 200px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.weather-display {
+  margin-top: 20px;
 }
 
 .forecast-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-    margin-top: 20px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
 }
 
 .forecast-card {
-    background: #ffffff;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
 }
 
-.forecast-card:hover {
-    transform: translateY(-5px);
+/* Recent Searches */
+.recent-searches {
+  margin: 20px 0;
 }
 
-.forecast-card img {
-    width: 60px;
+#recentContainer button {
+  margin: 5px;
+  background: #3498db;
+  color: white;
+  border-radius: 20px;
 }
 
-@media (max-width: 600px) {
-    .forecast-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
+#recentContainer button:hover {
+  background: #2980b9;
+}
+
+#clearHistory {
+  margin-top: 10px;
+  background: crimson;
+  color: white;
 }
